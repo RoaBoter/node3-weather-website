@@ -60,3 +60,16 @@ button {
 button:hover {
     background-color: #333333;
 }
+
+#weather-icon {
+    position: relative;
+    top: 0;
+    margin: 20px;
+    width: 100px;
+    box-shadow: -5px 5px 5px rgb(10, 10, 10);
+    transition: all 0.5s;
+}
+
+#weather-icon:hover {
+    top: -5px;
+}

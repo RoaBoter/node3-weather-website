@@ -14,7 +14,8 @@ const getWeather = ( longitude, latitude, callback ) => {
                 temp: body.current.temperature,
                 feelslike: body.current.feelslike,
                 description: body.current.weather_descriptions[0],
-                forecast: `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degrees out. It feels like ${body.current.feelslike}.`
+                forecast: `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degrees out. It feels like ${body.current.feelslike}.`,
+                icon: body.current.weather_icons[0]
             })
         }
     })
